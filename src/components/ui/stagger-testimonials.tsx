@@ -7,23 +7,23 @@ import { cn } from '@/lib/utils';
 const SQRT_5000 = Math.sqrt(5000);
 
 const testimonials = [
-  {
-    tempId: 0,
-    testimonial: "RBEducation's consultancy was instrumental in getting my AI-driven sustainable energy research published in a high-impact journal with seamless guidance.",
-    by: "Dr. K. Basava Raj, Professor (CSE)",
-    imgSrc: "https://i.ibb.co/Kpz0jPrM/resource-person-photo.jpg"
-  },
-  {
-    tempId: 1,
-    testimonial: "RBEducation's end-to-end publication support helped my RF antenna research gain the academic visibility it truly deserved on an international platform.",
-    by: "Dr. K.H.Murali, Department of Electronics and Communication ",
-    imgSrc: "https://i.ibb.co/HfhXc1Zd/person-07.png"
-  },
+  // {
+  //   tempId: 0,
+  //   testimonial: "RBEducation's consultancy was instrumental in getting my AI-driven sustainable energy research published in a high-impact journal with seamless guidance.",
+  //   by: "Dr. K. Basava Raj, Professor (CSE)",
+  //   imgSrc: "https://i.ibb.co/Kpz0jPrM/resource-person-photo.jpg"
+  // },
+  // {
+  //   tempId: 1,
+  //   testimonial: "RBEducation's end-to-end publication support helped my RF antenna research gain the academic visibility it truly deserved on an international platform.",
+  //   by: "Dr. K.H.Murali, Department of Electronics and Communication ",
+  //   imgSrc: "https://i.ibb.co/HfhXc1Zd/person-07.png"
+  // },
   {
     tempId: 2,
-    testimonial: "RBEducation expertly guided my solar cell research through the publication pipeline, helping me reach the right journal for maximum research impact.",
-    by: "Dr. K.Praveen Kumar, Professor in Department of Chemistry",
-    imgSrc: "https://i.ibb.co/7Nv9dbvt/person-08.png"
+    testimonial: "RBEducation's dissertation consultancy made my M.Tech journey at JNTUH incredibly smooth, providing expert guidance from topic selection to final submission with outstanding academic support.",
+    by: "T.Ajay, MTech in jntuh",
+    imgSrc: "https://i.ibb.co/ksWjw0db/image.png"
   },
   {
     tempId: 3,
@@ -37,24 +37,24 @@ const testimonials = [
   //   by: "Dr.Thirugnanam, Prof, Dept of H&S",
   //   imgSrc: "https://i.ibb.co/jkWN550f/person-10.png"
   // },
-  {
-    tempId: 5,
-    testimonial: "RBEducation's consultancy was a game-changer in turning my on-ground waste management work into a globally published research paper with zero hassle",
-    by: "Mr. Etikala Chinna, Senior Project Coordinator ",
-    imgSrc: "https://i.ibb.co/gbNLVWYs/person-13.png"
-  },
-  {
-    tempId: 6,
-    testimonial: "RBEducation made the complex publication process effortless for my multi-domain research on 3D printing and drone automation technologies.",
-    by: "Dr. Mudda Nirish, Sr. R&D Engineer, Measure India Corporation Pvt. Ltd",
-    imgSrc: "https://i.ibb.co/3mz0MxrJ/person-14.png"
-  },
-  {
-    tempId: 7,
-    testimonial: "RBEducation's expert consultancy helped me publish my green chemistry research in a globally recognized peer-reviewed journal with great efficiency.",
-    by: "Prof. R. Balamurugan, School of Chemistry, University of Hyderabad ",
-    imgSrc: "https://i.ibb.co/XZgJ4znS/person-15.png"
-  },
+  // {
+  //   tempId: 5,
+  //   testimonial: "RBEducation's consultancy was a game-changer in turning my on-ground waste management work into a globally published research paper with zero hassle",
+  //   by: "Mr. Etikala Chinna, Senior Project Coordinator ",
+  //   imgSrc: "https://i.ibb.co/gbNLVWYs/person-13.png"
+  // },
+  // {
+  //   tempId: 6,
+  //   testimonial: "RBEducation made the complex publication process effortless for my multi-domain research on 3D printing and drone automation technologies.",
+  //   by: "Dr. Mudda Nirish, Sr. R&D Engineer, Measure India Corporation Pvt. Ltd",
+  //   imgSrc: "https://i.ibb.co/3mz0MxrJ/person-14.png"
+  // },
+  // {
+  //   tempId: 7,
+  //   testimonial: "RBEducation's expert consultancy helped me publish my green chemistry research in a globally recognized peer-reviewed journal with great efficiency.",
+  //   by: "Prof. R. Balamurugan, School of Chemistry, University of Hyderabad ",
+  //   imgSrc: "https://i.ibb.co/XZgJ4znS/person-15.png"
+  // },
   {
     tempId: 8,
     testimonial: "RBEducation guided my research journey from manuscript preparation to final publication, making the entire process smooth and highly professional.",

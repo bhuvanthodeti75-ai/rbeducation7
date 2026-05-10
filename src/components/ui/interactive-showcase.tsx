@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  Users, Clock, ShieldCheck, Medal, 
-  Lightbulb, Pencil, Eye, Settings, Send, 
+import {
+  Users, Clock, ShieldCheck, Medal,
+  Lightbulb, Pencil, Eye, Settings, Send,
   CheckCircle2, Globe, ArrowRight
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -62,20 +62,20 @@ const showcaseCards = [
     tag: 'impact',
     preview: (
       <div className="grid grid-cols-2 gap-2 opacity-40">
-        <div className="text-[10px] font-bold text-[#9DD4A8]">4200+</div>
-        <div className="text-[10px] font-bold text-[#9DD4A8]">98%</div>
-        <div className="text-[10px] font-bold text-[#6EC6D4]">120+</div>
-        <div className="text-[10px] font-bold text-[#6EC6D4]">30+</div>
+        <div className="text-[10px] font-bold text-[#9DD4A8]">100+</div>
+        <div className="text-[10px] font-bold text-[#9DD4A8]">86%</div>
+        <div className="text-[10px] font-bold text-[#6EC6D4]">40+</div>
+        <div className="text-[10px] font-bold text-[#6EC6D4]">25+</div>
       </div>
     ),
     expanded: {
       heading: 'Numbers That Speak',
       subtext: 'Our platform has transformed the research landscape, empowering thousands of scholars worldwide.',
       stats: [
-        { value: '4200+', label: 'Papers Published' },
-        { value: '98%', label: 'Acceptance Rate' },
-        { value: '120+', label: 'Journals Covered' },
-        { value: '30+', label: 'Research Domains' }
+        { value: '100+', label: 'Papers Published' },
+        { value: '86%', label: 'Acceptance Rate' },
+        { value: '40+', label: 'Journals Covered' },
+        { value: '25+', label: 'Research Domains' }
       ]
     }
   },
@@ -139,11 +139,11 @@ export const InteractiveShowcase = () => {
       {/* Background Video (Sticky for static effect) — DO NOT MODIFY */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="sticky top-0 h-screen w-full overflow-hidden">
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline 
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
             className="absolute inset-0 w-full h-full object-cover opacity-90"
             src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260417_061226_74f0749c-a22d-42b3-895e-5d6203bc741c.mp4"
           />
@@ -166,9 +166,9 @@ export const InteractiveShowcase = () => {
           >
             {/* Section label — Mist cyan */}
             <h5 className="text-[10px] uppercase tracking-[0.4em] text-[#6EC6D4] font-bold mb-4">Our Ecosystem</h5>
-            <h2 
+            <h2
               className="font-instrument transition-all duration-700"
-              style={{ 
+              style={{
                 fontSize: 'clamp(42px, 6vw, 72px)',
                 fontStyle: 'italic',
                 fontWeight: 400,
@@ -201,9 +201,9 @@ export const InteractiveShowcase = () => {
               index={idx}
               incrementY={60}
               incrementZ={15}
-              style={{ 
+              style={{
                 top: expandedId === card.id ? undefined : idx * 60 + 100,
-                zIndex: expandedId === card.id ? 50 : idx 
+                zIndex: expandedId === card.id ? 50 : idx
               }}
               onClick={() => toggleExpand(card.id)}
               className={cn(
@@ -242,7 +242,7 @@ export const InteractiveShowcase = () => {
                 {/* Expanded Content Section */}
                 <AnimatePresence>
                   {expandedId === card.id && (
-                    <motion.div 
+                    <motion.div
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
@@ -333,7 +333,7 @@ export const InteractiveShowcase = () => {
 
                 {/* CTA row — primary blue #5AAFCC */}
                 <div className="flex items-center gap-2 text-[#5AAFCC] text-[10px] font-bold tracking-[0.2em] uppercase pt-4">
-                  {expandedId === card.id ? 'Show Less' : 'Explore More'} 
+                  {expandedId === card.id ? 'Show Less' : 'Explore More'}
                   <motion.span animate={{ rotate: expandedId === card.id ? 180 : 0 }}>
                     <ArrowRight size={12} />
                   </motion.span>
