@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Paper Publication Agency – We craft impactful publications that elevate research, ideas, and brands." />
+  <title>Paper Publication Agency</title>
+
+  <!-- Google Fonts: matching bold grotesque style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Spline viewer web component -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">PAPERPUB <sup class="nav-sup">©</sup></div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" class="nav-link">ABOUT</a></li>
+      <li><a href="#projects" class="nav-link">PROJECTS <span class="nav-count">(12)</span></a></li>
+      <li><a href="#blog" class="nav-link">BLOG</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-menu-label">MENU</div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+
+    <!-- Spline 3D Robot — interactive background -->
+    <div class="spline-container" id="spline-slot">
+      <spline-viewer
+        id="spline-viewer"
+        url="https://prod.spline.design/3ytmsknGHkdNXd6H/scene.splinecode"
+        loading-anim-type="spinner-big-dark"
+        events-target="global"
+      ></spline-viewer>
+    </div>
+
+    <!-- Covers the "Built with Spline" badge in the bottom-right -->
+    <div class="spline-badge-cover" aria-hidden="true"></div>
+
+    <!-- Copyright year badge -->
+    <div class="hero-copyright">©19-26</div>
+
+    <!-- Hero large title -->
+    <div class="hero-title-wrap">
+      <h1 class="hero-title">
+        <!-- PAPER: Golden Yellow → Vibrant Cyan  (matches "Digital" gradient in color_pattern.md) -->
+        <span class="word w-paper grad-paper">PAPER</span>
+        <br />
+        <!-- PUBLICATION: Golden Yellow → Vivid Orange → Crimson  (matches "Studio" gradient in color_pattern.md) -->
+        <span class="word w-pub grad-pub">PUBLICATION</span>
+      </h1>
+    </div>
+
+    <!-- Services sidebar (right) -->
+    <div class="hero-services" id="about">
+      <p class="service-item">Editorial Design</p>
+      <p class="service-item">Research Publishing</p>
+      <p class="service-item">Brand Identity &amp; Print</p>
+      <p class="service-item">Ongoing Support</p>
+    </div>
+
+    <!-- Hero tagline (bottom-left) -->
+    <div class="hero-tagline">
+      <p>We craft impactful publications that help ideas move<br />
+      further and convert better. Your research deserves more<br />
+      than just a manuscript. It needs results.</p>
+    </div>
+
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="projects-section" id="projects">
+    <div class="section-header">
+      <h2 class="section-title">OUR <span class="highlight-text">WORK</span></h2>
+      <p class="section-sub">A selection of publications &amp; design projects we're proud of.</p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card" tabindex="0">
+        <div class="card-number">01</div>
+        <div class="card-content">
+          <h3>Research Quarterly</h3>
+          <p>Academic journal design &amp; layout for a leading institution.</p>
+          <span class="card-tag">Editorial</span>
+        </div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="project-card" tabindex="0">
+        <div class="card-number">02</div>
+        <div class="card-content">
+          <h3>Nexus Annual Report</h3>
+          <p>Corporate annual report with infographic-rich spreads.</p>
+          <span class="card-tag">Print</span>
+        </div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="project-card" tabindex="0">
+        <div class="card-number">03</div>
+        <div class="card-content">
+          <h3>Spectrum Magazine</h3>
+          <p>Bold consumer magazine covering tech &amp; culture.</p>
+          <span class="card-tag">Magazine</span>
+        </div>
+        <div class="card-arrow">→</div>
+      </div>
+      <div class="project-card" tabindex="0">
+        <div class="card-number">04</div>
+        <div class="card-content">
+          <h3>Thesis Typesetting</h3>
+          <p>Professional typesetting &amp; formatting for doctoral theses.</p>
+          <span class="card-tag">Academic</span>
+        </div>
+        <div class="card-arrow">→</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BLOG / MARQUEE ========== -->
+  <section class="blog-section" id="blog">
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span class="marquee-item">PRINT IS ALIVE</span>
+        <span class="marquee-dot">●</span>
+        <span class="marquee-item">IDEAS IN INK</span>
+        <span class="marquee-dot">●</span>
+        <span class="marquee-item">WORDS THAT MATTER</span>
+        <span class="marquee-dot">●</span>
+        <span class="marquee-item">PUBLISH WITH PURPOSE</span>
+        <span class="marquee-dot">●</span>
+        <span class="marquee-item">PAPER &amp; PASSION</span>
+        <span class="marquee-dot">●</span>
+        <span class="marquee-item">PRINT IS ALIVE</span>
+        <span class="marquee-dot">●</span>
+        <span class="marquee-item">IDEAS IN INK</span>
+        <span class="marquee-dot">●</span>
+        <span class="marquee-item">WORDS THAT MATTER</span>
+        <span class="marquee-dot">●</span>
+        <span class="marquee-item">PUBLISH WITH PURPOSE</span>
+        <span class="marquee-dot">●</span>
+        <span class="marquee-item">PAPER &amp; PASSION</span>
+        <span class="marquee-dot">●</span>
+      </div>
+    </div>
+
+    <div class="blog-grid">
+      <article class="blog-card" tabindex="0">
+        <div class="blog-card-top">
+          <span class="blog-tag">INSIGHT</span>
+          <span class="blog-date">MAR 2026</span>
+        </div>
+        <h3>Why Print Still Wins in a Digital Age</h3>
+        <p>Physical publications command attention like no screen ever will. Here's why agencies are doubling down on paper.</p>
+        <a href="#" class="blog-read">READ MORE →</a>
+      </article>
+      <article class="blog-card" tabindex="0">
+        <div class="blog-card-top">
+          <span class="blog-tag">TUTORIAL</span>
+          <span class="blog-date">FEB 2026</span>
+        </div>
+        <h3>Grid Systems for Academic Journals</h3>
+        <p>A technical deep-dive into building modular grid systems that survive the print process.</p>
+        <a href="#" class="blog-read">READ MORE →</a>
+      </article>
+      <article class="blog-card" tabindex="0">
+        <div class="blog-card-top">
+          <span class="blog-tag">CASE STUDY</span>
+          <span class="blog-date">JAN 2026</span>
+        </div>
+        <h3>From Manuscript to Masterpiece</h3>
+        <p>How we transformed a 400-page research manuscript into an award-winning publication.</p>
+        <a href="#" class="blog-read">READ MORE →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-left">
+      <div class="footer-brand">PAPERPUB<sup>©</sup></div>
+      <p class="footer-copy">© 2019–2026 Paper Publication Agency.<br />All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+      <a href="mailto:hello@paperpub.agency" class="footer-link">hello@paperpub.agency</a>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">LI</a>
+        <a href="#" class="social-btn">IG</a>
+        <a href="#" class="social-btn">TW</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
