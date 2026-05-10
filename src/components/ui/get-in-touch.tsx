@@ -42,7 +42,7 @@ export const GetInTouch = () => {
               {
                 icon: PhoneIcon,
                 label: 'PHONE',
-                value: '9490328358 , 82477890',
+                value: '9490328358 , 8247789049',
               },
               {
                 icon: MapPinIcon,
