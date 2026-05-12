@@ -137,24 +137,28 @@ const NewHeroSection = () => {
 
       {/* Hero Content */}
       <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 text-center -translate-y-[10%]">
-        <motion.h1 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-          className="text-5xl sm:text-5xl md:text-7xl lg:text-8xl text-white tracking-tighter leading-[0.9] px-4"
-          style={{ 
-            fontFamily: "'Instrument Serif', serif",
-            textShadow: `
-              0 0 20px rgba(255, 255, 255, 0.4),
-              0 0 40px rgba(255, 255, 255, 0.2),
-              0 10px 20px rgba(0, 0, 0, 0.6)
-            `,
-            letterSpacing: "-0.03em"
-          }}
+          className="px-4"
         >
-          Transforming Research <br />
-          <span className="italic opacity-80 text-[#8DAFD4]">Into Global Recognition</span>
-        </motion.h1>
+          <h1 
+            className="text-5xl sm:text-5xl md:text-7xl lg:text-8xl text-white tracking-tighter leading-[0.9]"
+            style={{ 
+              fontFamily: "'Instrument Serif', serif",
+              textShadow: `
+                0 0 20px rgba(255, 255, 255, 0.4),
+                0 0 40px rgba(255, 255, 255, 0.2),
+                0 10px 20px rgba(0, 0, 0, 0.6)
+              `,
+              letterSpacing: "-0.03em"
+            }}
+          >
+            Transforming Research <br />
+            <span className="italic opacity-80 text-[#8DAFD4]">Into Global Recognition</span>
+          </h1>
+        </motion.div>
         <h1 className="sr-only">M.Tech & PhD Paper Publication Support</h1>
       </div>
 
