@@ -685,7 +685,9 @@ ul { list-style: none; }
   border: 0;
 }
 
-/* WhatsApp Floating Button */
+/* =====================================================
+   WHATSAPP FLOATING BUTTON
+   ===================================================== */
 .whatsapp-float {
   position: fixed;
   bottom: 28px;
@@ -716,10 +718,11 @@ ul { list-style: none; }
   transform: scale(1.08);
 }
 
-.whatsapp-float i {
-  font-size: 28px;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1;
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
 }
 
 .whatsapp-tooltip {
