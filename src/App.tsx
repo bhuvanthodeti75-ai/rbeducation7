@@ -155,6 +155,7 @@ const NewHeroSection = () => {
           Transforming Research <br />
           <span className="italic opacity-80 text-[#8DAFD4]">Into Global Recognition</span>
         </motion.h1>
+        <h1 className="sr-only">M.Tech & PhD Paper Publication Support | RB Educations</h1>
       </div>
 
       {/* Bottom Fade Overlay */}
