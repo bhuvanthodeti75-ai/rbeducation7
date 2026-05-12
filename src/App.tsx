@@ -168,22 +168,6 @@ const NewHeroSection = () => {
   );
 };
 
-const PublishersStrip = () => (
-  <section className="publishers-strip">
-    <p className="publishers-caption">
-      We help you meet the standards of top-tier journals.
-    </p>
-    <div className="publishers-logos">
-      <img src="logos/ieee.svg" alt="IEEE" />
-      <img src="logos/scopus.svg" alt="Scopus" />
-      <img src="logos/springer.svg" alt="Springer" />
-      <img src="logos/elsevier.svg" alt="Elsevier" />
-      <img src="logos/wiley.svg" alt="Wiley" />
-      <img src="logos/taylor-francis.svg" alt="Taylor & Francis" />
-    </div>
-  </section>
-);
-
 // Marquee Section
 const Marquee = () => (
   <div className="marquee-wrap overflow-hidden bg-primary py-4 mb-20">
@@ -237,7 +221,6 @@ export default function App() {
     <div className="min-h-screen bg-background text-foreground selection:bg-primary selection:text-primary-foreground">
       <MouseGlow />
       <NewHeroSection />
-      <PublishersStrip />
       <div className="h-[120px] -mt-[120px] bg-gradient-to-b from-transparent to-[#0A0A0A] pointer-events-none relative z-[2]" />
 
       <ResearchSolutions />
