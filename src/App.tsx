@@ -7,6 +7,7 @@ import { InteractiveShowcase } from './components/ui/interactive-showcase';
 import { FadingVideo } from './components/ui/fading-video';
 import { GetInTouch } from './components/ui/get-in-touch';
 import { Instagram, Twitter, Globe, ArrowRight, Menu, X } from 'lucide-react';
+import { FloatingContact } from './components/ui/floating-contact';
 
 declare global {
   namespace JSX {
@@ -261,6 +262,7 @@ export default function App() {
       </section>
 
       <GetInTouch />
+      <FloatingContact />
     </div>
   );
 }
