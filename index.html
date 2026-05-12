@@ -18,24 +18,66 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&family=Instrument+Serif:ital@0;1&family=Bebas+Neue&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    
+    <div class="fab-container">
+      <!-- Option 1: Phone -->
+      <a href="tel:+919490328358" class="fab-option" aria-label="Call Us">
+        <i class="fa-solid fa-phone"></i>
+        <span class="fab-tooltip">Call Us</span>
+      </a>
 
-    <!-- WhatsApp Floating Button -->
-    <a 
-      href="https://wa.me/919490328358?text=Hello%2C%20I%20need%20help%20with%20my%20research%20publication." 
-      class="whatsapp-float" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      aria-label="Chat with us on WhatsApp"
-    >
-      <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-        alt="WhatsApp" 
-      />
-      <span class="whatsapp-tooltip">Chat with us on WhatsApp</span>
-    </a>
+      <!-- Option 2: WhatsApp -->
+      <a href="https://wa.me/919490328358?text=Hello%2C%20I%20need%20help%20with%20my%20research%20publication."
+         class="fab-option" target="_blank" rel="noopener noreferrer"
+         aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="fab-tooltip">WhatsApp</span>
+      </a>
+
+      <!-- Option 3: Email -->
+      <a href="mailto:rbeducations7@gmail.com" class="fab-option" 
+         aria-label="Email Us">
+        <i class="fa-solid fa-envelope"></i>
+        <span class="fab-tooltip">Email Us</span>
+      </a>
+
+      <!-- Main Toggle Button -->
+      <button class="fab-main" id="fabToggle" aria-label="Contact Us">
+        <i class="fa-solid fa-comment-dots" id="fabIcon"></i>
+      </button>
+    </div>
+
+    <script>
+      const fabToggle = document.getElementById('fabToggle');
+      const fabContainer = document.querySelector('.fab-container');
+      const fabIcon = document.getElementById('fabIcon');
+
+      fabToggle.addEventListener('click', () => {
+        fabContainer.classList.toggle('open');
+
+        // Swap icon between comment and X
+        if (fabContainer.classList.contains('open')) {
+          fabIcon.className = 'fa-solid fa-xmark';
+        } else {
+          fabIcon.className = 'fa-solid fa-comment-dots';
+        }
+      });
+
+      // Close when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!fabContainer.contains(e.target)) {
+          fabContainer.classList.remove('open');
+          fabIcon.className = 'fa-solid fa-comment-dots';
+        }
+      });
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
