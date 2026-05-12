@@ -45,11 +45,11 @@ export const FloatingContact = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-8 right-8 z-[100] flex flex-col items-end gap-4" ref={menuRef}>
+    <div className="fixed bottom-8 right-8 z-[100] flex flex-col items-end gap-3" ref={menuRef}>
       <AnimatePresence>
         {isOpen && (
           <motion.div 
-            className="flex flex-col gap-4 mb-2"
+            className="flex flex-col gap-3 mb-2"
             initial="closed"
             animate="open"
             exit="closed"
@@ -72,23 +72,21 @@ export const FloatingContact = () => {
                   open: { opacity: 1, y: 0, scale: 1 },
                   closed: { opacity: 0, y: 20, scale: 0.8 }
                 }}
-                whileHover={{ scale: 1.1, x: -5 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ }}
+                whileTap={{ }}
                 className={cn(
-                  "group relative flex items-center gap-4 px-4 py-3 rounded-full border border-white/10 backdrop-blur-xl bg-gradient-to-br transition-all duration-300",
+                  "group relative flex items-center gap-2 px-3 py-2 rounded-full border border-white/10 backdrop-blur-xl bg-gradient-to-br transition-all duration-300",
                   "bg-[rgba(12,18,35,0.85)] hover:border-white/20 hover:bg-[rgba(25,40,75,0.75)]",
-                  action.glow
+                  action.glow.replace('12px', '16px')
                 )}
               >
-                <span className="text-white/60 text-xs font-bold tracking-[0.2em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  {action.label}
-                </span>
-                <div className={cn("p-2 rounded-full bg-gradient-to-br text-white", action.color)}>
-                  <action.icon size={20} />
+                {/* Removed label to keep it clean and remove hover effect */}
+                <div className={cn("p-1.5 rounded-full bg-gradient-to-br text-white", action.color)}>
+                  <action.icon size={16} />
                 </div>
                 
                 {/* Ambient Glow */}
-                <div className="absolute -inset-1 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 rounded-full blur-lg transition-opacity -z-10" />
+                <div className="absolute -inset-0.5 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 rounded-full blur-md transition-opacity -z-10" />
               </motion.a>
             ))}
           </motion.div>
@@ -101,10 +99,10 @@ export const FloatingContact = () => {
           "relative w-16 h-16 rounded-full flex items-center justify-center border border-white/15 backdrop-blur-2xl shadow-[0_20px_50px_-10px_rgba(0,0,0,0.5)] transition-all duration-500",
           isOpen 
             ? "bg-[rgba(25,40,75,0.9)] border-white/30 rotate-90" 
-            : "bg-[rgba(12,18,35,0.85)] hover:bg-[rgba(25,40,75,0.75)] hover:border-white/25"
+            : "bg-[rgba(12,18,35,0.85)]"
         )}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
+        whileHover={{ }}
+        whileTap={{ }}
         animate={{
           y: isOpen ? 0 : [0, -10, 0],
         }}
