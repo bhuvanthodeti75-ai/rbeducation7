@@ -89,8 +89,8 @@ const NewHeroSection = () => {
           
           <div className="hidden md:flex items-center gap-10">
             {[
-              { name: "Solutions", id: "projects" },
-              { name: "Ecosystem", id: "showcase" },
+              { name: "Our Services", id: "our-services" },
+              { name: "Research Areas", id: "research-areas" },
               { name: "Feedback", id: "feedback" },
               { name: "Contact", id: "contact" }
             ].map((link) => (
@@ -117,8 +117,8 @@ const NewHeroSection = () => {
         <div className={`md:hidden absolute top-full left-0 w-full px-4 pt-2 transition-all duration-500 ${isMobileMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
           <div className="bg-[#080F19]/90 backdrop-blur-2xl border border-[#8DAFD4]/20 rounded-2xl p-6 flex flex-col gap-6 shadow-2xl">
             {[
-              { name: "Solutions", id: "projects" },
-              { name: "Ecosystem", id: "showcase" },
+              { name: "Our Services", id: "our-services" },
+              { name: "Research Areas", id: "research-areas" },
               { name: "Feedback", id: "feedback" },
               { name: "Contact", id: "contact" }
             ].map((link) => (
@@ -155,7 +155,7 @@ const NewHeroSection = () => {
           Transforming Research <br />
           <span className="italic opacity-80 text-[#8DAFD4]">Into Global Recognition</span>
         </motion.h1>
-        <h1 className="sr-only">M.Tech & PhD Paper Publication Support | RB Educations</h1>
+        <h1 className="sr-only">M.Tech & PhD Paper Publication Support</h1>
       </div>
 
       {/* Bottom Fade Overlay */}

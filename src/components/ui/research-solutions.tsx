@@ -75,7 +75,7 @@ export const ResearchSolutions = () => {
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
   return (
-    <section className="pb-12 pt-20 px-6 md:px-12 bg-[#0A0A0A] relative overflow-hidden" id="projects">
+    <section className="pb-12 pt-20 px-6 md:px-12 bg-[#0A0A0A] relative overflow-hidden" id="our-services">
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
         <FadingVideo 

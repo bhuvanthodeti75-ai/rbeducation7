@@ -135,7 +135,7 @@ export const InteractiveShowcase = () => {
   };
 
   return (
-    <section className="pt-16 pb-24 bg-[#0A0A0A] relative flex flex-col items-center overflow-visible" id="showcase">
+    <section className="pt-16 pb-24 bg-[#0A0A0A] relative flex flex-col items-center overflow-visible" id="research-areas">
       {/* Background Video (Sticky for static effect) — DO NOT MODIFY */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="sticky top-0 h-screen w-full overflow-hidden">
