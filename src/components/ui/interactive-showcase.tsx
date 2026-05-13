@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   Users, Clock, ShieldCheck, Medal,
   Lightbulb, Pencil, Eye, Settings, Send,
@@ -95,12 +95,13 @@ const showcaseCards = [
       heading: 'Indexed & Recognised Journals',
       subtext: 'We match your research to the right journal for maximum impact.',
       journals: [
-        { name: 'IEEE', category: 'Engineering & Technology' },
-        { name: 'Scopus', category: 'Multi-disciplinary' },
-        { name: 'UGC Care', category: 'Academic Research' },
-        { name: 'Web of Science', category: 'Science & Humanities' },
-        { name: 'Springer', category: 'Scientific & Technical' },
-        { name: 'Elsevier', category: 'Medical & Health' }
+        { name: 'IEEE', category: 'Engineering & Technology', logo: '/logos/ieee.svg' },
+        { name: 'Scopus', category: 'Multi-disciplinary', logo: 'https://upload.wikimedia.org/wikipedia/en/b/ba/Scopus_logo.svg' },
+        { name: 'UGC Care', category: 'Academic Research', logo: 'https://www.ugc.gov.in/img/logo.png' },
+        { name: 'Web of Science', category: 'Science & Humanities', logo: 'https://publons.com/media/logos/wos-logo.svg' },
+        { name: 'Springer', category: 'Scientific & Technical', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Springer-logo.svg' },
+        { name: 'Elsevier', category: 'Medical & Health', logo: '/logos/elsevier.svg' },
+        { name: 'Taylor & Francis', category: 'Academic Publisher', logo: '/logos/taylor-francis.svg' }
       ]
     }
   },
@@ -165,7 +166,7 @@ export const InteractiveShowcase = () => {
             transition={{ duration: 0.8 }}
           >
             {/* Section label — Mist cyan */}
-            <h5 className="text-[10px] uppercase tracking-[0.4em] text-[#6EC6D4] font-bold mb-4">Our Ecosystem</h5>
+            <h5 className="text-[10px] uppercase tracking-[0.4em] text-[#6EC6D4] font-bold mb-4">Academic Areas</h5>
             <h2
               className="font-instrument transition-all duration-700"
               style={{
@@ -178,16 +179,16 @@ export const InteractiveShowcase = () => {
             >
               {/* Heading — #DDEEF5 */}
               <span className="text-[#DDEEF5]">
-                Academic Publication
+                Academic Research
               </span>{' '}
               <br className="hidden md:block" />
               {/* Accent word — Primary blue */}
               <span className="text-[#5AAFCC]">
-                Ecosystem
+                Areas
               </span>
             </h2>
-            {/* Body text — #7A9BAA */}
-            <p className="mt-8 text-[#7A9BAA] text-lg font-barlow font-light leading-relaxed max-w-md">
+            {/* Body text — Darkened for premium feel #475B66 */}
+            <p className="mt-8 text-[#475B66] text-lg font-barlow font-light leading-relaxed max-w-md">
               A comprehensive journey from initial research to global indexing, powered by domain experts and premium academic networks.
             </p>
           </motion.div>
@@ -233,8 +234,8 @@ export const InteractiveShowcase = () => {
                   <h3 className="text-4xl md:text-5xl text-[#DDEEF5] font-instrument italic leading-tight mb-4">
                     {card.title}
                   </h3>
-                  {/* Description — body text #7A9BAA */}
-                  <p className="text-[#7A9BAA] text-sm font-barlow font-light max-w-md">
+                  {/* Description — body text #56717E */}
+                  <p className="text-[#475B66] text-sm font-barlow font-light max-w-md">
                     {card.description}
                   </p>
                 </div>
@@ -262,7 +263,7 @@ export const InteractiveShowcase = () => {
                                 </div>
                                 <div>
                                   <div className="text-[#DDEEF5] font-medium text-sm">{item.title}</div>
-                                  <div className="text-[#7A9BAA] text-[10px]">{item.desc}</div>
+                                  <div className="text-[#475B66] text-[10px]">{item.desc}</div>
                                 </div>
                               </div>
                             ))}
@@ -284,7 +285,7 @@ export const InteractiveShowcase = () => {
                                 <div className="pb-4">
                                   {/* Step title hover — primary blue */}
                                   <div className="text-[#DDEEF5] font-medium text-sm group-hover:text-[#5AAFCC] transition-colors">{step.title}</div>
-                                  <div className="text-[#7A9BAA] text-[11px] leading-relaxed">{step.desc}</div>
+                                  <div className="text-[#475B66] text-[11px] leading-relaxed">{step.desc}</div>
                                 </div>
                               </div>
                             ))}
@@ -313,14 +314,24 @@ export const InteractiveShowcase = () => {
                                 <div key={i} className="p-3 rounded-lg border border-[rgba(80,160,200,0.15)] bg-[rgba(10,22,30,0.65)] flex items-center justify-between group">
                                   <div>
                                     <div className="text-[#DDEEF5] font-bold text-xs">{journal.name}</div>
-                                    <div className="text-[#7A9BAA] text-[8px] uppercase">{journal.category}</div>
+                                    <div className="text-[#475B66] text-[8px] uppercase">{journal.category}</div>
                                   </div>
-                                  {/* Checkmark — botanical green */}
-                                  <CheckCircle2 className="w-3 h-3 text-[#9DD4A8] opacity-40 group-hover:opacity-100" />
+                                  {/* Journal Logo — Static Darkened Color */}
+                                  <div className="w-8 h-8 flex items-center justify-center brightness-75 contrast-125 saturate-150 transition-all duration-300">
+                                    <img 
+                                      src={journal.logo} 
+                                      alt={journal.name} 
+                                      className="max-w-full max-h-full object-contain"
+                                      onError={(e) => {
+                                        // Fallback if logo fails
+                                        (e.target as HTMLImageElement).style.display = 'none';
+                                      }}
+                                    />
+                                  </div>
                                 </div>
                               ))}
                             </div>
-                            <p className="text-[#7A9BAA] text-[10px] text-center italic">
+                            <p className="text-[#475B66] text-[10px] text-center italic">
                               +120 more indexed journals covered
                             </p>
                           </div>

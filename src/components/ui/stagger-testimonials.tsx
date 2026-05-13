@@ -9,97 +9,97 @@ const SQRT_5000 = Math.sqrt(5000);
 const testimonials = [
   // {
   //   tempId: 0,
-  //   testimonial: "RBEducation's consultancy was instrumental in getting my AI-driven sustainable energy research published in a high-impact journal with seamless guidance.",
+  //   testimonial: "RBEDUCATIONS7's consultancy was instrumental in getting my AI-driven sustainable energy research published in a high-impact journal with seamless guidance.",
   //   by: "Dr. K. Basava Raj, Professor (CSE)",
   //   imgSrc: "https://i.ibb.co/Kpz0jPrM/resource-person-photo.jpg"
   // },
   // {
   //   tempId: 1,
-  //   testimonial: "RBEducation's end-to-end publication support helped my RF antenna research gain the academic visibility it truly deserved on an international platform.",
+  //   testimonial: "RBEDUCATIONS7's end-to-end publication support helped my RF antenna research gain the academic visibility it truly deserved on an international platform.",
   //   by: "Dr. K.H.Murali, Department of Electronics and Communication ",
   //   imgSrc: "https://i.ibb.co/HfhXc1Zd/person-07.png"
   // },
   {
     tempId: 2,
-    testimonial: "RBEducation's dissertation consultancy made my M.Tech journey at JNTUH incredibly smooth, providing expert guidance from topic selection to final submission with outstanding academic support.",
+    testimonial: "RBEDUCATIONS7's dissertation consultancy made my M.Tech journey at JNTUH incredibly smooth, providing expert guidance from topic selection to final submission with outstanding academic support.",
     by: "T.Ajay, MTech in jntuh",
     imgSrc: "https://i.ibb.co/ksWjw0db/image.png"
   },
   {
     tempId: 3,
-    testimonial: "RBEducation bridged the gap between my industry expertise and academic publishing, making my smart energy management research a published success.",
+    testimonial: "RBEDUCATIONS7 bridged the gap between my industry expertise and academic publishing, making my smart energy management research a published success.",
     by: "Mr. Nandikunta Venkataravindra Reddy, Senior Hardware Developer",
     imgSrc: "https://i.ibb.co/1JLV1Fc7/person-09.png"
   },
   // {
   //   tempId: 4,
-  //   testimonial: "RBEducation's exceptional publication consultancy helped me present my research on energy sustainability and climate change to the global academic community with remarkable precision and professionalism.",
+  //   testimonial: "RBEDUCATIONS7's exceptional publication consultancy helped me present my research on energy sustainability and climate change to the global academic community with remarkable precision and professionalism.",
   //   by: "Dr.Thirugnanam, Prof, Dept of H&S",
   //   imgSrc: "https://i.ibb.co/jkWN550f/person-10.png"
   // },
   // {
   //   tempId: 5,
-  //   testimonial: "RBEducation's consultancy was a game-changer in turning my on-ground waste management work into a globally published research paper with zero hassle",
+  //   testimonial: "RBEDUCATIONS7's consultancy was a game-changer in turning my on-ground waste management work into a globally published research paper with zero hassle",
   //   by: "Mr. Etikala Chinna, Senior Project Coordinator ",
   //   imgSrc: "https://i.ibb.co/gbNLVWYs/person-13.png"
   // },
   // {
   //   tempId: 6,
-  //   testimonial: "RBEducation made the complex publication process effortless for my multi-domain research on 3D printing and drone automation technologies.",
+  //   testimonial: "RBEDUCATIONS7 made the complex publication process effortless for my multi-domain research on 3D printing and drone automation technologies.",
   //   by: "Dr. Mudda Nirish, Sr. R&D Engineer, Measure India Corporation Pvt. Ltd",
   //   imgSrc: "https://i.ibb.co/3mz0MxrJ/person-14.png"
   // },
   // {
   //   tempId: 7,
-  //   testimonial: "RBEducation's expert consultancy helped me publish my green chemistry research in a globally recognized peer-reviewed journal with great efficiency.",
+  //   testimonial: "RBEDUCATIONS7's expert consultancy helped me publish my green chemistry research in a globally recognized peer-reviewed journal with great efficiency.",
   //   by: "Prof. R. Balamurugan, School of Chemistry, University of Hyderabad ",
   //   imgSrc: "https://i.ibb.co/XZgJ4znS/person-15.png"
   // },
   {
     tempId: 8,
-    testimonial: "RBEducation guided my research journey from manuscript preparation to final publication, making the entire process smooth and highly professional.",
+    testimonial: "RBEDUCATIONS7 guided my research journey from manuscript preparation to final publication, making the entire process smooth and highly professional.",
     by: "Shaik shareef ,Research scholar at osmania university",
     imgSrc: "https://i.ibb.co/ZpPykStW/image.png"
   },
   {
     tempId: 9,
-    testimonial: "With RBEducation's support, my research on advanced drug delivery systems was published in a prestigious journal far faster than I expected.",
+    testimonial: "With RBEDUCATIONS7's support, my research on advanced drug delivery systems was published in a prestigious journal far faster than I expected.",
     by: "Dr. Vaithiyanathan Andiran, DVice Principal, Head in Pharmaceutics department in G.P",
     imgSrc: "https://i.ibb.co/DDR7Qhm0/person-17.png"
   },
   {
     tempId: 10,
-    testimonial: "RBEducation's consultancy turned my industry experience into a well-structured research paper on energy-efficient cloud modernization that got published effortlessly.",
+    testimonial: "RBEDUCATIONS7's consultancy turned my industry experience into a well-structured research paper on energy-efficient cloud modernization that got published effortlessly.",
     by: "Ajay Kumar Reddy V, Product Managers",
     imgSrc: "https://i.ibb.co/HDsk0mwg/person-18.png"
   },
   {
     tempId: 11,
-    testimonial: "RBEducation's publication consultancy gave my environmental sustainability research the professional polish it needed to get accepted in a top-tier journal.",
+    testimonial: "RBEDUCATIONS7's publication consultancy gave my environmental sustainability research the professional polish it needed to get accepted in a top-tier journal.",
     by: "Dr. K. SriLakshmi, Assoc Professor, Department of Civil Engineering",
     imgSrc: "https://i.ibb.co/C5jCQf9P/person-19.png"
   },
   // {
   //   tempId: 12,
-  //   testimonial: "RBEducation's publication consultancy helped me transform my research on energy sustainability and climate change into a well-recognized academic paper with outstanding professional support..",
+  //   testimonial: "RBEDUCATIONS7's publication consultancy helped me transform my research on energy sustainability and climate change into a well-recognized academic paper with outstanding professional support..",
   //   by: "Mrs.P.Susan Rao , Asso.Professor, Dept. of H&S ",
   //   imgSrc: "https://i.ibb.co/9kSkvH2J/person-11.png  "
   // },
   {
     tempId: 13,
-    testimonial: "RBEducation guided my pharmaceutical R&D paper through every stage of publication, ensuring it met international standards with precision.",
+    testimonial: "RBEDUCATIONS7 guided my pharmaceutical R&D paper through every stage of publication, ensuring it met international standards with precision.",
     by: "Dr. Mokenapelli Sudhakar, Team Lead API-R&D department at R&D Center",
     imgSrc: "https://i.ibb.co/RpPJkj17/person-16.png"
   },
   {
     tempId: 14,
-    testimonial: "RBEducation's expert guidance on my M.Tech dissertation and publication consultancy helped me achieve academic excellence with a seamlessly structured and well-recognized research output",
+    testimonial: "RBEDUCATIONS7's expert guidance on my M.Tech dissertation and publication consultancy helped me achieve academic excellence with a seamlessly structured and well-recognized research output",
     by: "T.Baba,",
     imgSrc: "https://i.ibb.co/RkR04sxD/Whats-App-Image-2026-05-09-at-2-07-47-PM.jpg"
   },
   {
     tempId: 15,
-    testimonial: "RBEducation's expert publication support helped me establish my academic presence by getting my research work published in a reputed international journal effortlessly.",
+    testimonial: "RBEDUCATIONS7's expert publication support helped me establish my academic presence by getting my research work published in a reputed international journal effortlessly.",
     by: "swamy prasad, Assistant professor at sree dattha college of engineering",
     imgSrc: "https://i.ibb.co/0yFL99SM/Whats-App-Image-2026-05-09-at-2-29-27-PM.jpg"
   },

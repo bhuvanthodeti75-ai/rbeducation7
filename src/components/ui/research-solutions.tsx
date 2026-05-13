@@ -109,7 +109,7 @@ export const ResearchSolutions = () => {
               filter: 'brightness(1.4) contrast(1.1) drop-shadow(0 0 30px rgba(255,255,255,0.5)) drop-shadow(0 0 60px rgba(255,255,255,0.25)) drop-shadow(0 0 100px rgba(200,180,255,0.2))',
             }}
           >
-            Research Solutions
+            Our Services
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}

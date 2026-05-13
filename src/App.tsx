@@ -85,7 +85,7 @@ const NewHeroSection = () => {
         <div className="rounded-full px-4 md:px-8 py-3 flex items-center justify-between md:justify-start gap-4 md:gap-20 max-w-5xl mx-auto backdrop-blur-[16px] bg-[#080F19]/45 border border-[#8DAFD4]/20">
           <div className="flex items-center gap-2 text-white">
             <Globe size={24} className="text-[#8DAFD4]" />
-            <span className="font-bebas text-2xl md:text-3xl tracking-wider bg-gradient-to-r from-[#FFFFFF] via-[#C8D4E8] to-[#8DAFD4] bg-clip-text text-transparent uppercase">RBEDUCATION</span>
+            <span className="font-bebas text-2xl md:text-3xl tracking-wider bg-gradient-to-r from-[#FFFFFF] via-[#C8D4E8] to-[#8DAFD4] bg-clip-text text-transparent uppercase">RBEDUCATIONS7</span>
           </div>
           
           <div className="hidden md:flex items-center gap-10">
@@ -156,8 +156,8 @@ const NewHeroSection = () => {
               letterSpacing: "-0.03em"
             }}
           >
-            Transforming Research <br />
-            <span className="italic opacity-80 text-[#8DAFD4]">Into Global Recognition</span>
+            Expert Academic Support <br />
+            <span className="italic opacity-80 text-[#8DAFD4]">for M.Tech and PhD Scholars</span>
           </h1>
         </motion.div>
         <h1 className="sr-only">M.Tech & PhD Paper Publication Support</h1>
